@@ -23,7 +23,7 @@ export class AppController {
       .andWhere('vs.gnv_seal_chip_id', 1)
       .andWhereRaw(`vs.supply_at >= '2022-01-01'`)
       .andWhereRaw(`vs.supply_at <= '2022-09-15'`)
-      .limit(15)
+      .limit(2)
       // .offset((pag - 1) * 10)
       .orderByRaw('vs.supply_at desc');
 
